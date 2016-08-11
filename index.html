@@ -47,7 +47,8 @@
                         <div class="hamburger-icon"></div>
                     </button>
 
-                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="https://www.twitch.tv/snelson87" target="_blank">TWITCH STREAM</a></li><iframe src="http://streambadge.com/twitch/dark/snelson87/" style="border:none;height:6em;width:100%"></iframe></ul>
+                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="https://www.twitch.tv/snelson87" target="_blank">TWITCH STREAM</a></li>
+					<iframe src="http://streambadge.com/twitch/dark/snelson87/" style="border:none;height:6em;width:100%"></iframe></ul>
                     <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                         <div class="close-icon"></div>
                     </button>
@@ -69,8 +70,7 @@
                 <div class="mbr-section col-md-10 col-md-offset-1 text-xs-center">
 
                     <h1 class="mbr-section-title display-1">No Man's Guy</h1>
-                    <p class="mbr-section-lead lead">This is my official captains log for No Man's Sky.&nbsp;<br></p>
-                      
+                    <p class="mbr-section-lead lead">This is my official captains log for No Man's Sky.&nbsp;<br></p>     
                 </div>
             </div>
 		    <div id="nanoGallery3"></div>
@@ -132,9 +132,9 @@ $.ajax({
 		
             
 
-for (var i = 0, len = 1; i < len; i++) {
-$(data).find("a").attr("href", function (i, val) {
-if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+			for (var i = 0, len = 1; i < len; i++) {
+			$(data).find("a").attr("href", function (i, val) {
+			if( val.match(/\.(jpe?g|png|gif)$/) ) { 
 
 				var coolVar = val;
 				var partsArray = coolVar.split('/');
@@ -150,7 +150,7 @@ if( val.match(/\.(jpe?g|png|gif)$/) ) {
 				thumbnailWidth: 'auto',
 				thumbnailHeight: 100,
 				locationHash: false,
-				thumbnailHoverEffect:'borderLighter,imageScaleIn80',
+				thumbnailHoverEffect:[{ name: 'labelAppear75', duration: 300 }],
 				itemsBaseURL:'http://nomansguy.azurewebsites.net/Photos/'
 			  });
                 
