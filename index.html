@@ -38,11 +38,13 @@
                     <div class="navbar-brand">
                         <a class="navbar-logo"><img src="assets/images/logo2.gif" alt="Mobirise"></a>
                         <a class="navbar-caption">No Man's Guy Captain's Log</a>
+						
                     </div>
-
+					
                 </div>
+				
                 <div class="mbr-table-cell">
-
+				
                     <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                         <div class="hamburger-icon"></div>
                     </button>
@@ -87,6 +89,9 @@
     
     <div class="container">
         <p class="text-xs-center">Copyright (c) 2016 Shane Nelson</p>
+		<div align="middle">
+					<a href="https://twitter.com/snelson_88" target="_blank"><img src="assets\Social\Twitter.png" alt="Follow me ion Twitter!" style="width:5%;"></a>
+				</div>
     </div>
 </footer>
 
@@ -134,12 +139,11 @@ $.ajax({
 			for (var i = 0, len = 1; i < len; i++) {
 			$(data).find("a").attr("href", function (i, val) {
 			if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-
 				var coolVar = val;
 				var partsArray = coolVar.split('/');
-								var div = document.getElementById('nanoGallery2');
+				var div = document.getElementById('nanoGallery2');
 
-  div.innerHTML = div.innerHTML + "<a href='"+ partsArray[2] + "' data-ngthumb='"+ partsArray[2] +"'>" ;
+				div.innerHTML = div.innerHTML + "<a href='"+ partsArray[2] + "' data-ngthumb='"+ partsArray[2] +"'>" ;
 				}
 		});
 
@@ -151,7 +155,7 @@ $.ajax({
 				locationHash: false,
 				thumbnailHoverEffect:[{ name: 'labelAppear75', duration: 300 },{'name': 'borderLighter'}, {'name': 'imageScaleIn80'}],
 				itemsBaseURL:'http://nomansguy.azurewebsites.net/Photos/',
-				 thumbnailGutterWidth : 0,
+				thumbnailGutterWidth : 0,
 				thumbnailGutterHeight : 0,
 				i18n: { thumbnailImageDescription: 'View Photo', thumbnailAlbumDescription: 'Open Album' },
 				thumbnailLabel: { display: true, position: 'overImageOnMiddle', align: 'center' }
