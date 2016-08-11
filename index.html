@@ -120,18 +120,17 @@
   
   
   var folder = "http://nomansguy.azurewebsites.net/Photos/";
-var dir = "http://nomansguy.azurewebsites.net";
-var fileExt = {};
+  var dir = "http://nomansguy.azurewebsites.net";
+  var fileExt = {};
     fileExt[0]=".png";
     fileExt[1]=".jpg";
     fileExt[2]=".gif";
+	
+	
 $.ajax({
     url : folder,
     success: function (data) {
         
-		
-            
-
 			for (var i = 0, len = 1; i < len; i++) {
 			$(data).find("a").attr("href", function (i, val) {
 			if( val.match(/\.(jpe?g|png|gif)$/) ) { 
@@ -151,12 +150,13 @@ $.ajax({
 				thumbnailHeight: 100,
 				locationHash: false,
 				thumbnailHoverEffect:[{ name: 'labelAppear75', duration: 300 }],
-				itemsBaseURL:'http://nomansguy.azurewebsites.net/Photos/'
+				itemsBaseURL:'http://nomansguy.azurewebsites.net/Photos/',
+				 thumbnailGutterWidth : 0,
+				thumbnailGutterHeight : 0,
+				i18n: { thumbnailImageDescription: 'View Photo', thumbnailAlbumDescription: 'Open Album' },
+				thumbnailLabel: { display: true, position: 'overImageOnMiddle', align: 'center' }
 			  });
                 
-			
-            
-        
     }
 });
 
