@@ -139,16 +139,13 @@ if( val.match(/\.(jpe?g|png|gif)$/) ) {
 				var coolVar = val;
 				var partsArray = coolVar.split('/');
 								var div = document.getElementById('nanoGallery2');
-								
-				alert(partsArray[2]);
-				alert("1")
+
   div.innerHTML = div.innerHTML + "<a href='"+ partsArray[2] + "' data-ngthumb='"+ partsArray[2] +"'>" ;
 				}
 		});
 
 }
 
-alert("2")	
 				jQuery("#nanoGallery2").nanoGallery({
 				thumbnailWidth: 'auto',
 				thumbnailHeight: 100,
