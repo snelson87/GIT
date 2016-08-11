@@ -73,8 +73,10 @@
                       
                 </div>
             </div>
-			<div id="nanoGallery"><</div>
-    </div>
+		    <div id="nanoGallery3"></div>
+			<div id="nanoGallery2">
+			</div>
+			
 	
     
     <div class="mbr-arrow mbr-arrow-floating" aria-hidden="true"><a href="#next"><i class="mbr-arrow-icon"></i></a></div>
@@ -106,10 +108,64 @@
 </html>
 <script>
       $(document).ready(function () {
+	  
+	  
     $("#nanoGallery").nanoGallery({
       kind: 'picasa',
       userID: '105111300203663639875', 
       album: '5655220663264625105',
     });
+	
+  
+  
+  
+  var folder = "http://nomansguy.azurewebsites.net/Photos/";
+var dir = "http://nomansguy.azurewebsites.net";
+var fileExt = {};
+    fileExt[0]=".png";
+    fileExt[1]=".jpg";
+    fileExt[2]=".gif";
+$.ajax({
+    url : folder,
+    success: function (data) {
+        
+		
+            
+
+for (var i = 0, len = 1; i < len; i++) {
+$(data).find("a").attr("href", function (i, val) {
+if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+
+				var coolVar = val;
+				var partsArray = coolVar.split('/');
+								var div = document.getElementById('nanoGallery2');
+								
+				alert(partsArray[2]);
+				alert("1")
+  div.innerHTML = div.innerHTML + "<a href='"+ partsArray[2] + "' data-ngthumb='"+ partsArray[2] +"'>" ;
+				}
+		});
+
+}
+
+alert("2")	
+				jQuery("#nanoGallery2").nanoGallery({
+				thumbnailWidth: 'auto',
+				thumbnailHeight: 100,
+				locationHash: false,
+				thumbnailHoverEffect:'borderLighter,imageScaleIn80',
+				itemsBaseURL:'http://nomansguy.azurewebsites.net/Photos/'
+			  });
+                
+			
+            
+        
+    }
+});
+
+
+
+
   });
+  
 </script>
