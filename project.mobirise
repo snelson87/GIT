@@ -138,7 +138,7 @@
             "bgImageRadio": true,
             "showArrow": true,
             "bgImage": "@PROJECT_PATH@/assets/images/background-2000x1125-18.jpg",
-            "bgColor": "#a07e49",
+            "bgColor": "#000000",
             "bgColorRadio": false,
             "bgVideo": {
               "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
