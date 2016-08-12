@@ -40,7 +40,6 @@
                         <a class="navbar-caption">No Man's Guy Captain's Log</a>
 						
                     </div>
-					
                 </div>
 				
                 <div class="mbr-table-cell">
@@ -74,8 +73,12 @@
                     <h1 class="mbr-section-title display-1">No Man's Guy</h1>
                     <p class="mbr-section-lead lead">This is my official captains log for No Man's Sky.&nbsp;<br></p>     
                 </div>
+				<div align="middle">
+            <a class="mbr-section-lead lead" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:18px;text-decoration:underline; color: rgb(255,255,255)">Featured Captain's Log</a>
+			<iframe src="https://player.twitch.tv/?video=v81656536" frameborder="0" scrolling="no" height="300" width="300"></iframe>
+			    </div>
             </div>
-		    <div id="nanoGallery3"></div>
+			
 			<div id="nanoGallery2">
 			</div>
 			
@@ -143,7 +146,9 @@ $.ajax({
 				var partsArray = coolVar.split('/');
 				var div = document.getElementById('nanoGallery2');
 
-				div.innerHTML = div.innerHTML + "<a href='"+ partsArray[2] + "' data-ngthumb='"+ partsArray[2] +"'>" ;
+				var uniqueID = makeid();
+				div.innerHTML = div.innerHTML + "<a id'" + uniqueID + "' href='"+ partsArray[2] + "' data-ngthumb='"+ partsArray[2] +"'>" ;
+				
 				}
 		});
 
@@ -168,5 +173,17 @@ $.ajax({
 
 
   });
+  
+  function makeid()
+{
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for( var i=0; i < 5; i++ )
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+}
+
   
 </script>
