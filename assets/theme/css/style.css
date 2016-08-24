@@ -1975,6 +1975,14 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .mbr-iconfont-company-contacts5 {
   font-size: 22px;
   color: #000; }
+  .home {
+    border-radius: 25px;
+    border-color: #B1DBC8;
+    border-width: thin;
+    border-style: solid;
+    padding: 20px;
+    background-color: black;
+}
 
 html.is-builder .mbr-cards .card-img + .card-block {
   padding-top: 0; }
