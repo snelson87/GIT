@@ -556,7 +556,7 @@
 
 .nanogallery_theme_default .nanoGalleryContainerParent .nanoGalleryPagination,
 .nanogallery_theme_default .nanoGalleryContainerParent .nanoGalleryPaginationDot {
-	/*color:#eee;*/
+	color:#fff;
   margin: 10px auto 5px auto;
 	padding: 4px;
 	text-align:center;
