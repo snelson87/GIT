@@ -115,14 +115,6 @@
 <script>
       $(document).ready(function () {
 	  
-	  
-    $("#nanoGallery").nanoGallery({
-      kind: 'picasa',
-      userID: '105111300203663639875', 
-      album: '5655220663264625105',
-    });
-	
-  
   
   
   var folder = "http://nomansguy.azurewebsites.net/Photos/";
@@ -150,18 +142,20 @@ $.ajax({
 				}
 		});
 
-}
+			}
 
 				jQuery("#nanoGallery2").nanoGallery({
-				thumbnailWidth: 'auto',
-				thumbnailHeight: 100,
-				locationHash: false,
-				thumbnailHoverEffect:[{ name: 'labelAppear75', duration: 300 },{'name': 'borderLighter'}, {'name': 'imageScaleIn80'}],
-				itemsBaseURL:'http://nomansguy.azurewebsites.net/Photos/',
+				thumbnailWidth: 165,
+				thumbnailHeight: 110,
+				itemsBaseURL:'http://nomansguy.azurewebsites.net/Photos',
 				thumbnailGutterWidth : 0,
 				thumbnailGutterHeight : 0,
 				i18n: { thumbnailImageDescription: 'View Photo', thumbnailAlbumDescription: 'Open Album' },
-				thumbnailLabel: { display: true, position: 'overImageOnMiddle', align: 'center' }
+				thumbnailHoverEffect:[{'name':'slideUp','duration':300},{'name': 'borderLighter'}, {'name': 'imageScaleIn80'}],
+				thumbnailLabel: { display: true, position: 'overImageOnMiddle', align: 'center' },
+				thumbnailDisplayInterval:10,
+				thumbnailDisplayTransition:true,
+				paginationMaxLinesPerPage:5
 			  });
                 
     }
