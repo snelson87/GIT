@@ -76,7 +76,9 @@
 				<div align="middle">
             <a class="mbr-section-lead lead" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:18px;text-decoration:underline; color: rgb(255,255,255)">Latest Captain's Log</a>
 <iframe src="https://player.twitch.tv/?video=v83478562" frameborder="0" scrolling="no" height="378" width="620"></iframe>
-<a href="https://www.twitch.tv/snelson87?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px;text-decoration:underline;">Watch live video from snelson87 on www.twitch.tv</a>
+				<div align="middle">
+					<a href="https://twitter.com/snelson_88" target="_blank"><img src="assets\Social\Twitter.png" alt="Follow me ion Twitter!" style="width:5%;"></a>
+				</div>
 			</div>
             </div>
 			
@@ -90,9 +92,7 @@
     
     <div class="container">
         <p class="text-xs-center">Copyright (c) 2016 Shane Nelson</p>
-		<div align="middle">
-					<a href="https://twitter.com/snelson_88" target="_blank"><img src="assets\Social\Twitter.png" alt="Follow me ion Twitter!" style="width:5%;"></a>
-				</div>
+		
     </div>
 </footer>
 
@@ -145,8 +145,8 @@ $.ajax({
 			}
 
 				jQuery("#nanoGallery2").nanoGallery({
-				thumbnailWidth: 180,
-				thumbnailHeight: 180,
+				thumbnailWidth: 160,
+				thumbnailHeight: 160,
 				itemsBaseURL:'http://nomansguy.azurewebsites.net/Photos',
 				thumbnailGutterWidth : 0,
 				thumbnailGutterHeight : 0,
@@ -155,6 +155,7 @@ $.ajax({
 				i18n: { thumbnailImageDescription: 'View Photo', thumbnailAlbumDescription: 'open album' },
 				thumbnailDisplayInterval:10,
 				thumbnailDisplayTransition:true,
+				paginationSwipe: true,
 				paginationMaxLinesPerPage:5
 			  });
                 
