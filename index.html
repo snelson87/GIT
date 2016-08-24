@@ -145,14 +145,14 @@ $.ajax({
 			}
 
 				jQuery("#nanoGallery2").nanoGallery({
-				thumbnailWidth: 165,
-				thumbnailHeight: 110,
+				thumbnailWidth: 180,
+				thumbnailHeight: 180,
 				itemsBaseURL:'http://nomansguy.azurewebsites.net/Photos',
 				thumbnailGutterWidth : 0,
 				thumbnailGutterHeight : 0,
-				i18n: { thumbnailImageDescription: 'View Photo', thumbnailAlbumDescription: 'Open Album' },
-				thumbnailHoverEffect:[{'name':'slideUp','duration':300},{'name': 'borderLighter'}, {'name': 'imageScaleIn80'}],
-				thumbnailLabel: { display: true, position: 'overImageOnMiddle', align: 'center' },
+				thumbnailHoverEffect:[{'name':'labelSlideUp','duration':300},{'name': 'borderLighter'}, {'name': 'imageScaleIn80'}],
+				thumbnailLabel: { display: true, align: 'center' },
+				i18n: { thumbnailImageDescription: 'View Photo', thumbnailAlbumDescription: 'open album' },
 				thumbnailDisplayInterval:10,
 				thumbnailDisplayTransition:true,
 				paginationMaxLinesPerPage:5
